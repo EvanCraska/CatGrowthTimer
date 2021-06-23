@@ -27,13 +27,13 @@ public class CatGrowthPlugin extends Plugin
 	@Override
 	protected void startUp() throws Exception
 	{
-		log.info("Example started!");
+		log.info("Cat Growth started!");
 	}
 
 	@Override
 	protected void shutDown() throws Exception
 	{
-		log.info("Example stopped!");
+		log.info("Cat Growth stopped!");
 	}
 
 	@Subscribe
@@ -41,7 +41,7 @@ public class CatGrowthPlugin extends Plugin
 	{
 		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
 		{
-			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Example says " + config.greeting(), null);
+			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Cat Growth says " + config.greeting(), null);
 		}
 	}
 
